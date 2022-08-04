@@ -1,0 +1,140 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    color: #cccaca;
+    font-size: 17px;
+    line-height: 26px; 
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Roboto', sans-serif;
+  
+    
+} 
+
+.banner-part{
+    /* height: 100vh; */
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-part::before{
+    content: '';
+    display: block;
+    height: 100vh;
+}
+
+.banner-part::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(191, 61, 66, 1);
+    mix-blend-mode: darken;
+}
+.bg-stretch{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.banner-content{
+    position: relative;
+    z-index: 9;
+    max-width: 500px;
+    /* width: 100%; */
+    color: #ffff;
+    text-align: center;
+    
+}
+
+.overline-text {
+    /* font-family: 'Roboto',sans-serif; */
+    text-transform: uppercase;
+    font-size: 34px;
+}
+
+h1{
+    /* font-family: 'Roboto', sans-serif; */
+    font-weight: 700;
+    font-size: 65px;
+    text-transform: uppercase;
+}
+
+.btn{
+    text-decoration: none;
+    color: #333333;
+    text-transform: uppercase;
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+.btn.primary {
+    padding: 15px;
+    border: 2px solid #ffff;
+    color: #ffff;
+    background-color: #333333;
+    min-width: 230px;
+    height: 60px;
+    vertical-align: top;
+    border-radius: 30px;
+}
+
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    padding: 15px 50px;
+}
+
+#header .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2 {
+    font-size: 35px;
+    line-height: 2;
+    font-weight: 700;
+    color: #010304;
+    text-transform: uppercase;
+    margin: 0 0 45px;
+}
+
+.two-columns {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-part {
+    padding: 120px;
+}
+.container {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+}
+.two-columns .col {
+    width: 50%;
+
+}
+
+.about-part .image-wrap {
+    position: relative;
+    width: 500px;
+    height: 345px;
+}
