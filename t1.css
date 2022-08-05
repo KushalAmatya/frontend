@@ -121,6 +121,8 @@ h2 {
 .style {
     position: relative;
     padding: 0 0 0 44px;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .style::after {
@@ -134,10 +136,14 @@ h2 {
     background: url('./casino/about-logo.png')no-repeat center /cover;
 }
 
-.two-columns {
+.two-columns, .four-columns {
     display: flex;
     flex-wrap: wrap;
     margin: 0 -20px;
+}
+
+.four-columns .col {
+    width: auto;
 }
 
 .about-part {
@@ -148,6 +154,11 @@ h2 {
     width: 100%;
     margin: 0 auto;
 }
+
+.container.lg {
+    max-width: 1310px;
+}
+
 .two-columns .col {
     width: 50%;
     padding: 0 20px;
@@ -192,5 +203,45 @@ h2 {
 }
 
 .products-part {
+    text-align: center;
+}
+
+.products-part h2 {
+    line-height: 1;
+    margin-bottom: 17px;
+}
+
+.products-part .style::after {
+    top: -6px;
+}
+
+.products-part p {
+    margin: 0 0 15px;
+}
+
+.product-detail {
+    background-color: #121212;
+    border-radius: 23px;
+    overflow: hidden;
+}
+
+.product-detail .product-image {
+    height: 400px;
+    position: relative;
+}
+
+.product-code{
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    color: #ffff;
+    background-color: #191919;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    border: 2px solid #b03d42;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     text-align: center;
 }
